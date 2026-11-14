@@ -20,6 +20,6 @@ bookletnize -h
 ## develop
 
 ```
-poetry install
-portry run bookletnize input.pdf output.pdf
+uv sync
+uv run bookletnize input.pdf output.pdf
 ```
