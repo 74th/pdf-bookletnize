@@ -1,21 +1,25 @@
-[tool.poetry]
+[project]
 name = "pdf-bookletnize"
 version = "0.1.0"
 description = ""
-authors = ["Atsushi Morimoto (74th) <site@74th.tech>"]
 readme = "README.md"
+requires-python = ">=3.12"
+authors = [
+    { name = "Atsushi Morimoto (74th)", email = "74th.tech@gmail.com" }
+]
+dependencies = [
+    "pypdf>=6.21.4",
+]
 
-[tool.poetry.dependencies]
-python = "^3.12"
-pypdf = "^4.2.0"
-
-
-[tool.poetry.group.dev.dependencies]
-pylint = "^3.1.0"
-
-[tool.poetry.scripts]
+[project.scripts]
 bookletnize = "pdf_bookletnize.bookletnize:main"
 
+[dependency-groups]
+dev = [
+    "pylint>=4.0.9",
+]
+
 [build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
