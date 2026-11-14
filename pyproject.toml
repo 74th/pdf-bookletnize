@@ -5,7 +5,7 @@ description = ""
 readme = "README.md"
 requires-python = ">=3.12"
 authors = [
-    { name = "Atsushi Morimoto (74th)", email = "site@74th.tech" }
+    { name = "Atsushi Morimoto (74th)", email = "74th.tech@gmail.com" }
 ]
 dependencies = [
     "pypdf>=6.21.4",
